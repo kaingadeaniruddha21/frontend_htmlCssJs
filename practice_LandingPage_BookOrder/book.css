@@ -1,0 +1,46 @@
+
+
+main {
+    min-height: 90vh;
+    }
+    
+    footer{
+    padding: 10px 0; 
+    background-color: #101010; 
+    color:#9d9d9d; 
+    bottom: 0; 
+    width: 100%; }
+    .row_style{margin-top: 70px;
+    }
+    h2{font-weight: bolder; 
+    }
+    .jumbotron_style{margin-top: 70px;
+    }
+    .table_style{margin-top: 70px;
+    }
+    h4{font-weight: bolder;
+    }
+    .container_style{margin-top: 80px;
+    }
+    
+    
+img{
+    margin-left: 70px;
+    margin-top: 70px;
+    width: 27%;
+    height: 75%;
+}    
+
+.imgContent{
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px; 
+}
+
+
+.options{
+    padding: 20px;
+    white-space: normal;
+}
