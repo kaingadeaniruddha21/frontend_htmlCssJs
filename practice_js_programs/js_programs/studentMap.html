@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><title>Student_map!</title></head>
+<body>
+<script>
+let studentsNames = new Map([
+    [121,'mahesh'],
+    [122,'venky'],
+    [123,'akshay'],
+]);
+console.log(typeof (students));
+console.log(studentsNames.get(123));
+for (const stud of studentsNames.values()){
+    console.log(stud)
+}
+for (const stud of studentsNames.entries()){
+    console.log(`${stud[0]} := ${stud[1]}`);
+}
+let stud = {sid : 1234,sname : 'abc'};
+let stud1 = {sid : 1244,sname : 'abc1'};
+let stud2 = {sid : 1223,sname : 'abc2'};
+let stud3 = {sid : 1123,sname : 'abc3'};
+let studentDesignation = new Map([
+    [stud,'CR'],
+    [stud1,'Secretary'],
+    [stud2,'EventManager'],
+    [stud3,'SportsTeamCaptain'],
+]);
+studentDesignation.forEach((studentDesignation,stud) => console.log (`${stud.sname} := ${studentDesignation}`))
+</script></body>
+</html>

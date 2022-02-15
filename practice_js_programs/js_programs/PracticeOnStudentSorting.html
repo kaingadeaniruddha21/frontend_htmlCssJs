@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>practice1</title>
+    </head>
+
+
+
+<body>
+<script>
+const student = [{
+    id : 123,
+    name : "Sweetie",
+    age : 45,
+    grade : 'A',
+    address : "Bangalore"
+},
+    {
+        id : 124,
+    name : "Abhi",
+    age : 45,
+    grade : 'A',
+    address : "Hyderabad"
+},
+{   id : 125,
+    name : "RamaKrishna",
+    age : 45,
+    grade : 'A',
+    address : "Andhra Pradesh"
+}];
+function compareBy(propertyName) {
+    return function (obj1,obj2){
+        let obj1_propName = obj1[propertyName],
+                obj2_propName = obj2[propertyName];
+        if(obj1_propName > obj2_propName){
+            return 1;
+        } else   if(obj1_propName < obj2_propName){
+            return -1;
+        }else{
+            return 0;
+        }
+    };
+}
+console.log("student data after sorting....");
+//document.write("student data after sorting....");
+student.sort(compareBy('address'));
+console.table(student);
+
+
+
+</script>
+</body>
+</html>

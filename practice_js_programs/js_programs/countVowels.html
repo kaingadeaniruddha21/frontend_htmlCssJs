@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>CountVowels</title>
+        </head>
+
+        <body>
+
+            <script>
+
+
+                function CountVowels (str){
+
+                    const count = str.match(/[aeiou]/gi).length;
+
+                    return count;
+
+                }
+                const string = prompt("enter a string:");
+
+                const result= CountVowels(string);
+
+                document.write(result);
+
+                console.log(result);
+                </script>
+        </body>
+    </html>

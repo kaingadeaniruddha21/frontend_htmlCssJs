@@ -1,0 +1,19 @@
+<html>
+    <head><title>PickFirstCharFromArray</title></head>
+    <body>
+        <script>
+                var names = ['rama','ajay','jaya','durga','bunny','chinnu'];
+
+                let abcMsg= names.map(function(names)
+                    {
+                        for(name= 0 ; name<=names.length-1 ; name++)
+                            {
+                                return names[name].charAt(name);
+                            }
+                    });
+
+                console.log(abcMsg.join(''));
+
+        </script>
+    </body>
+</html>
